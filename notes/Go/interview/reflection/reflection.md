@@ -17,7 +17,6 @@
 `Name()` 
  This returns, not surprisingly, the name of the type. Some types, like a **slice** or a **pointer**, don’t have names and this method returns an **empty** string.
 
-
 `Kind()` 
 The kind is what the type is made of — a slice, a map, a pointer, a struct, an interface, a string, an array, a function, an int or some other primitive type. The difference between the kind and the type can be tricky to understand, but think of it this way. If you define a struct named Foo, the kind is struct and the type is Foo.
 
