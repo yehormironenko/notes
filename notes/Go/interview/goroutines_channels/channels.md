@@ -45,3 +45,55 @@ All channels have:
 `func chanrecv(c *hchan, ep unsafe.Pointer, block bool) (selected, received bool) — func to read from the channel.`
 `func closechan(c *hchan) — func to close the channel`
 
+
+
+## Package sync 
+
+This type allow to define a group of goroutines that should be executed together as a group. 
+And we can set a lock that will pause execution of the function until the entire group of gouroutines has finished executing. 
+
+```
+func main() { 
+    var wg sync.WaitGroup 
+    wg.Add(2)       // 2 gouroutines in the group
+    counter := 5
+    doubleCounter := func() { 
+        defer wg.Done() 
+        counter = counter * 2
+   } 
+  
+   // calls gouroutines
+   go doubleCounter() 
+   go doubleCounter() 
+  
+   wg.Wait()        // waiting 2 gouriutines
+   fmt.Println("Counter:", counter) 
+}
+```
+
+**Wait group** can be passed as a parameter to the function but only as **pointer**
+
+### Mutex
+
+Mutex allows to block critical section of the code, section here - part of code which should not be executed in the several goroutines
+
+## RW Mutex
+an arbitrary number of readers can lock section or just one writer
+
+
+## Sync Map
+
+It is safe for simultaneous use.
+
+Sync.Map is optimized for two cases, when we write a one time and will read a lot of times - as cache.
+Or if few goroutines read, where and re-write for different keys
+
+we cannot copy sync.map becaouse contas Mutex. 
+
+## notes
+
+go run -race 
+flag for finding race conditions 
+
+## interesting pattern in lesson 
+with channel and blocker with special boolean channel 

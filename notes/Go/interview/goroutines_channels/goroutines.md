@@ -6,11 +6,13 @@
 
 `go list.Sort()  // run list.Sort concurrently; don't wait for it.`
 
-`
+
+```
 func Announce(message string, delay time.Duration) {
     go func() {
         time.Sleep(delay)
         fmt.Println(message)
     }()  // Note the parentheses - must call the function.
 }
-`
+```
+
