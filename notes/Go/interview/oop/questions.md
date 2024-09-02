@@ -34,12 +34,12 @@ func main() {
 
 ### Incapsulation in Go
 
-Lower or upper case. So, like privite and public. 
+Lower or upper cases. So, like private and public. 
 
 ### Polymorphism in Go
 
 Polymorphism in go is implemented using interfaces. 
-General idea: We can declare interfaces for out types. And we need to implemet functionts  that satisfy these interfaces.
+General idea: We can declare interfaces for out types. And we need to implemet  functionts  that satisfy these interfaces.
 
 
 ### Packages in Go

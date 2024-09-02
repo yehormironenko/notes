@@ -4,7 +4,7 @@
 Constants - this si unchanged variables, not possible to change constant
 
 ### What is the iota
-`iota` - an identifier that allows you to create consecutive untyped constants.
+`iota` - an identifier that allows to create consecutive untyped constants.
 
 `
 const (
