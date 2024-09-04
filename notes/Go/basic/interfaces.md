@@ -112,7 +112,6 @@ type server struct { ... }
 func (s *server) Start() { ... }
 func NewServer() Server { return &server{ ... } }
 ```
-
 ```
 package consumer
 import “tcp”
