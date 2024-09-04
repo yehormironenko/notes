@@ -54,3 +54,14 @@ General problem cannot find wrapped errors, can detect just a hight level error
 Wrapping adding new context information to the returned error
 it can be type, reason or name of function
 
+
+## Handle panic
+
+```
+func handlePanic() {
+  err := recover()
+  if err != mil {
+    fmt.Printf("recovered from error %s\n", err)
+  }
+}
+```

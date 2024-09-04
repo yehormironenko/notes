@@ -13,6 +13,13 @@
 
 An **interface** is a programming construct that describes the behavior of an object without specifying the underlying implementation details.
 
+```
+type  iface  struct {
+    tab *itab  //type
+    data unsafe.Pointer //data
+}
+```
+
 ## Why do we need interfaces 
 
 - reducing duplicated code 
