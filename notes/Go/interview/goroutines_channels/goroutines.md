@@ -15,4 +15,3 @@ func Announce(message string, delay time.Duration) {
     }()  // Note the parentheses - must call the function.
 }
 ```
-
