@@ -11,6 +11,7 @@ Prior to the introduction of generics, you had to use interfaces and type assert
 Type parameters and type constraints are the building blocks of generics in Go. Type parameters are placeholders for the actual types that will be used when the generic function or data structure is instantiated. Type constraints restrict the types that can be used as type arguments.
 
 **Example**
+
 ```
 package main
 
