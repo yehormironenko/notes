@@ -1,7 +1,7 @@
 ## Const в Golang
 
 ### What is constants in Go
-Constants - this si unchanged variables, not possible to change constant
+Constants - this is unchanged variables, not possible to change constant
 
 ### What is the iota
 `iota` - an identifier that allows to create consecutive untyped constants.
